@@ -1,0 +1,32 @@
+.brandmake .brandmake_titie {
+  position: relative;
+}
+.brandmake .brandmake_titie .brandmake_titie_img img {
+  width: 100%;
+}
+.brandmake .brandmake_titie .brandmake_titie_img h3 {
+  position: absolute;
+  top: 34%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  color: #fcfcfc;
+  border-bottom: 3px solid #fcfcfc;
+  padding-bottom: 3px;
+}
+.brandmake .brandmake_titie .brandmake_titie_text {
+  padding: 15px;
+  font-size: 14px;
+}
+.brandmake .brandmake_content .brandmake_content_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.brandmake .brandmake_content .brandmake_content_list .brandmake_content_item {
+  width: 49%;
+}
+.brandmake .brandmake_content .brandmake_content_list .brandmake_content_item img {
+  width: 100%;
+}

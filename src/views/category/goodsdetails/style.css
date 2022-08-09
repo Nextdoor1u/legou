@@ -1,0 +1,97 @@
+.goodsdetails {
+  width: 100%;
+  background-color: #f7f7f7;
+}
+.goodsdetails .swipe .my-swipe {
+  width: 375px;
+}
+.goodsdetails .swipe .my-swipe ::v-deep .swipe_img {
+  width: 100%;
+}
+.goodsdetails .goods_info .goods_info_title h3 {
+  font-size: 18px;
+}
+.goodsdetails .goods_info .goods_info_title p:last-child {
+  color: #c12c1f;
+  font-size: 16px;
+}
+.goodsdetails .goods_select_norms {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #999;
+  margin-bottom: 5px;
+}
+.goodsdetails .goods_parameter {
+  margin-bottom: 40px;
+  background-color: #fff;
+}
+.goodsdetails .goods_parameter .goods_parameter_list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.goodsdetails .goods_parameter .goods_parameter_list .goods_parameter_item {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #f7f7f7;
+}
+.goodsdetails .goods_parameter .goods_parameter_list .goods_parameter_item span {
+  text-align: left;
+  width: 25%;
+}
+.goodsdetails .goods_parameter .goods_parameter_list .goods_parameter_item p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 69%;
+}
+.goodsdetails .goods_parameter .goods_info ::v-deep img {
+  width: 100%;
+}
+.goodsdetails .goods_parameter .goods_problem .goods_problem_title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goodsdetails .goods_parameter .goods_problem .goods_problem_title .goods_problem_line {
+  width: 30px;
+  height: 2px;
+  background-color: #999;
+  margin: 0 5px;
+}
+.goodsdetails .goods_parameter .goods_problem .goods_problem_container_list .goods_problem_container_item {
+  padding: 0 20px;
+}
+.goodsdetails .goods_parameter .goods_problem .goods_problem_container_list .goods_problem_container_item p {
+  text-align: left;
+}
+.goodsdetails .goods_parameter .goods_problem .goods_problem_container_list .goods_problem_container_item p:first-child {
+  color: #333;
+  font-style: 16px;
+}
+.goodsdetails .goods_parameter .goods_problem .goods_problem_container_list .goods_problem_container_item p:first-child::before {
+  content: '●';
+  color: #c12c1f;
+}
+.goodsdetails .goods_parameter .goods_problem .goods_problem_container_list .goods_problem_container_item p:last-child {
+  color: #666;
+  font-style: 12px;
+}
+.goodsdetails .all_look_goods .all_look_goods_list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.goodsdetails .all_look_goods .all_look_goods_list .all_look_goods_item {
+  width: 50%;
+}
+.goodsdetails .all_look_goods .all_look_goods_list .all_look_goods_item img {
+  width: 100%;
+}
+.goodsdetails .van-sku-container {
+  min-height: 30%;
+}

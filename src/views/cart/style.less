@@ -1,0 +1,71 @@
+.cart {
+	//购物车列表部分
+	.cart_content {
+		background-color: #fff;
+		.cart_content_list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+			.cart_content_item {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				padding-left: 10px;
+				border-bottom: 1px solid #f6f6f6;
+				.cart_content_item_btn {
+					flex: 1;
+					padding-left: 5px;
+					button {
+						width: 20px;
+						height: 20px;
+						border: 1px solid #999;
+						background-color: #fff;
+						border-radius: 50%;
+					}
+					.van-button {
+						width: 20px;
+						height: 20px;
+					}
+				}
+				.cart_content_item_text {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					flex-wrap: wrap;
+					flex: 8;
+					.cart_content_item_text_left {
+						display: flex;
+						flex-wrap: wrap;
+						justify-content: space-between;
+						align-items: center;
+						flex: 4;
+						.cart_content_item_text_left_img {
+							flex: 2;
+							img {
+								width: 100%;
+							}
+						}
+						.cart_content_item_text_left_describe {
+							flex: 4;
+							display: flex;
+							flex-direction: column;
+							align-items: flex-start;
+							padding: 15px 0;
+						}
+					}
+					.cart_content_item_text_right {
+						flex: 1;
+					}
+				}
+			}
+		}
+	}
+	//底部提交订单
+	.cart_content_submit {
+		.van-submit-bar {
+			margin-bottom: 50px;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+//按需引入vant
+import Vue from 'vue';
+import {
+	Button,
+	Swipe,
+	SwipeItem,
+	Tabbar,
+	TabbarItem,
+	Icon,
+	Search,
+	NavBar,
+	List,
+	SidebarItem,
+	Sidebar,
+	Tab,
+	Tabs,
+	GoodsAction,
+	GoodsActionButton,
+	GoodsActionIcon,
+	Sku,
+	AddressEdit,
+	AddressList,
+	SubmitBar,
+	Checkbox,
+	CheckboxGroup,
+	Field,
+	Divider,
+} from 'vant';
+Vue.use(Divider);
+Vue.use(Field);
+Vue.use(Checkbox);
+Vue.use(CheckboxGroup);
+Vue.use(SubmitBar);
+Vue.use(AddressList);
+Vue.use(AddressEdit);
+Vue.use(Sku);
+Vue.use(GoodsAction);
+Vue.use(GoodsActionButton);
+Vue.use(GoodsActionIcon);
+Vue.use(Tab);
+Vue.use(Tabs);
+Vue.use(Sidebar);
+Vue.use(SidebarItem);
+Vue.use(Button);
+Vue.use(List);
+Vue.use(Swipe);
+Vue.use(SwipeItem);
+Vue.use(Tabbar);
+Vue.use(TabbarItem);
+Vue.use(Icon);
+Vue.use(Search);
+Vue.use(NavBar);

@@ -1,0 +1,120 @@
+.goodsdetails {
+	width: 100%;
+	background-color: #f7f7f7;
+	// margin-bottom: 60px;
+	//轮播部分
+	.swipe {
+		.my-swipe {
+			width: 375px;
+			::v-deep .swipe_img {
+				width: 100%;
+			}
+		}
+	}
+	//商品详情部分
+	.goods_info {
+		.goods_info_title {
+			h3 {
+				font-size: 18px;
+			}
+			p {
+				&:last-child {
+					color: #c12c1f;
+					font-size: 16px;
+				}
+			}
+		}
+	}
+	//规格数量选择
+	.goods_select_norms {
+		display: flex;
+		padding: 20px;
+		justify-content: space-between;
+		align-items: center;
+		border-top: 1px solid #999;
+		margin-bottom: 5px;
+	}
+	//商品参数
+	.goods_parameter {
+		margin-bottom: 40px;
+		background-color: #fff;
+		.goods_parameter_list {
+			display: flex;
+			flex-wrap: wrap;
+			padding: 10px;
+			.goods_parameter_item {
+				width: 100%;
+				display: flex;
+				justify-content: flex-start;
+				align-items: center;
+				background-color: #f7f7f7;
+				span {
+					text-align: left;
+					width: 25%;
+				}
+				p {
+					white-space: nowrap; //段落中的文本不进行换行
+					overflow: hidden; //超出宽度部分隐藏
+					text-overflow: ellipsis; //当文本溢出时，要发生的事。有三个值：  clip -  修剪文本；ellipsis - 显示省略号来代表被修剪的文本；string - 使用给定的字符串来代表被修剪的文本
+					width: 69%; //宽度自己设定，一定要有
+				}
+			}
+		}
+		.goods_info {
+			::v-deep img {
+				width: 100%;
+			}
+		}
+		//常见问题部分
+		.goods_problem {
+			.goods_problem_title {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				.goods_problem_line {
+					width: 30px;
+					height: 2px;
+					background-color: #999;
+					margin: 0 5px;
+				}
+			}
+			.goods_problem_container_list {
+				.goods_problem_container_item {
+					padding: 0 20px;
+					p {
+						text-align: left;
+						&:first-child {
+							color: #333;
+							font-style: 16px;
+							&::before {
+								content: '●';
+								color: #c12c1f;
+							}
+						}
+						&:last-child {
+							color: #666;
+							font-style: 12px;
+						}
+					}
+				}
+			}
+		}
+	}
+	//大家都在看
+	.all_look_goods {
+		.all_look_goods_list {
+			display: flex;
+			flex-wrap: wrap;
+			width: 100%;
+			.all_look_goods_item {
+				width: 50%;
+				img {
+					width: 100%;
+				}
+			}
+		}
+	}
+	.van-sku-container {
+		min-height: 30%;
+	}
+}

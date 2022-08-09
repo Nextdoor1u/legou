@@ -1,0 +1,30 @@
+.favorite {
+	//标题
+	.favorite_title {
+		padding: 15px 0px;
+		background-color: #fff;
+		margin-block-end: 5px;
+		margin-block-start: 5px;
+	}
+	//收藏列表
+	.favorite_container {
+		width: 100%;
+		.favorite_container_list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.favorite_container_item {
+				background-color: #fff;
+				width: 48%;
+				img {
+					width: 90%;
+				}
+				p {
+					&:last-child {
+						color: #c12c1f;
+					}
+				}
+			}
+		}
+	}
+}

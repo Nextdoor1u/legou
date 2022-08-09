@@ -1,0 +1,93 @@
+.order {
+	width: 100%;
+	//添加/选择地址
+	.add_address {
+		background-color: #fff;
+		//顶部装饰
+		.add_address_decorate {
+			width: 100%;
+			height: 5px;
+			background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/address-bg-bd30f2bfeb.png)
+				0 0 repeat-x #fff;
+		}
+		//地址部分
+		.add_address_container {
+			font-size: 16px;
+			padding: 15px 10px;
+			//渲染地址部分
+			.add_address_container_data {
+				display: flex;
+				justify-content: space-between;
+				.add_address_container_data_name {
+					flex: 1;
+					p {
+						font-weight: 700;
+						font-size: 12px;
+					}
+				}
+				.add_address_container_data_other {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					flex: 4;
+					.add_address_container_data_other_left {
+						font-size: 12px;
+						text-align: left;
+						p {
+							&:first-child {
+								font-weight: 700;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//商品价格部分
+	.order_goods {
+		margin: 15px 0px;
+		background-color: #fff;
+		padding: 10px 15px;
+		.order_goods_list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+
+			.order_goods_item {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				border-bottom: 1px solid #999;
+				color: #000;
+			}
+		}
+	}
+	//商品购买信息汇总
+	.order_goods_container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		background-color: #fff;
+		padding: 15px;
+		.order_goods_container_img {
+			flex: 1;
+			img {
+				width: 100%;
+			}
+		}
+		.order_goods_container_text {
+			flex: 4;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.order_goods_container_text_left {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+		}
+	}
+}

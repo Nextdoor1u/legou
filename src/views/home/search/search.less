@@ -1,0 +1,100 @@
+@baseColor: #c12c1f;
+@bgcColor: #fff;
+
+.search {
+	height: 100%;
+	//搜索提示框
+	.searchCue {
+		height: 100%;
+		.searchCue_list {
+			padding: 10px;
+			background-color: #fff;
+			height: 100%;
+			.searchCue_item {
+				text-align: left;
+				padding: 5px;
+			}
+		}
+	}
+	// 搜索框商品展示
+	.showGoods {
+		background-color: #fff;
+		.showGoods_top {
+			padding: 0 15px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid #333;
+			.showGoods_pic {
+				display: flex;
+				align-items: center;
+				.arrow {
+					display: flex;
+					flex-direction: column;
+					.current {
+						color: @baseColor;
+					}
+				}
+			}
+			.active {
+				color: @baseColor;
+			}
+		}
+		.showGoods_bottom {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			width: 50%;
+			border-right: 1px solid #666;
+			img {
+				width: 60%;
+			}
+		}
+	}
+	//历史搜索部分
+	.history {
+		background-color: #fff;
+		padding: 10px;
+		.history_top {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.history_bootm {
+			.history_bootm_list {
+				display: flex;
+				.history_bootm_item {
+					border: 1px solid #666;
+					padding: 5px;
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+	//热门搜索部分
+	.hot_search {
+		padding: 10px;
+		margin-top: 20px;
+		background-color: @bgcColor;
+		.hot_search_list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: first baseline;
+			h4 {
+				font-weight: normal;
+				text-align: left;
+			}
+			.hot_search_item {
+				padding: 5px;
+				margin-right: 20px;
+				margin-bottom: 10px;
+				border: 1px solid #ccc;
+				//激活时的样式
+				&.active {
+					color: @baseColor;
+					border: 1px solid @baseColor;
+				}
+			}
+		}
+	}
+}

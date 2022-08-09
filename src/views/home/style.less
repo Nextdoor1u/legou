@@ -1,0 +1,224 @@
+@bgc_Color: #fff;
+@font_Color: #8a8a8a;
+.home {
+	//搜索区域
+	.search {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: @bgc_Color;
+		div {
+			flex: 1;
+		}
+		.search_btn {
+			flex: 3;
+		}
+	}
+	//顶部部分 导航+banner+channel
+	.top {
+		.van-swipe {
+			.van-swipe-item {
+				.img {
+					width: 100%;
+				}
+			}
+			//轮播图小点的样式
+			::v-deep .van-swipe__indicator {
+				background-color: rgba(0, 0, 0, 0.7);
+			}
+		}
+
+		//channel部分
+		.channel {
+			background-color: @bgc_Color;
+			.channelList {
+				display: flex;
+				justify-content: space-around;
+				align-items: center;
+				padding: 10px;
+				.channelItem {
+					text-align: center;
+					img {
+						width: 30px;
+						height: 30px;
+						flex: 1;
+					}
+				}
+			}
+		}
+
+		// 品牌部分
+	}
+	//品牌制造部分
+	.brand {
+		background-color: @bgc_Color;
+		padding-top: 20px;
+		margin-top: 4px;
+		.brand_list {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: center;
+			.brand_item {
+				position: relative;
+				display: flex;
+				flex-wrap: wrap;
+				padding-left: 4px;
+				margin-bottom: 4px;
+				width: 180px;
+				height: 115px;
+				img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+				}
+				.brand_text {
+					z-index: 2;
+				}
+			}
+		}
+	}
+	// 新品首发
+	.new_product {
+		width: 100%;
+		height: 370px;
+		margin-bottom: 10px;
+		.new_product_top {
+			height: 135px;
+			text-align: center;
+			background-color: #f1f7fd;
+			p {
+				font-size: 20px;
+			}
+			.van-button {
+				background-color: #d8e4f0;
+			}
+		}
+		.new_product_bottom {
+			height: 230px;
+			.new_product_list {
+				display: flex;
+				padding: 10px;
+				height: 100%;
+				flex-wrap: nowrap;
+				overflow: scroll;
+				.new_product_item {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					flex-direction: column;
+					width: 165px;
+					height: 200px;
+					flex-shrink: 0;
+					background-color: @bgc_Color;
+					.img {
+						width: 80px;
+						height: 80px;
+					}
+					.new_product_describe {
+						width: 100px;
+						h4 {
+							font-size: 15px;
+							margin-bottom: 15px;
+							overflow: hidden; /*超出的部分隐藏起来。*/
+							white-space: nowrap; /*不显示的地方用省略号...代替*/
+							text-overflow: ellipsis; /* 支持 IE */
+						}
+						p {
+							overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							color: @font_Color;
+							font-size: 14px;
+							&:last-child {
+								text-align: left;
+								color: #9c3232;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//精选部分
+	.chosen {
+		width: 100%;
+		height: 300px;
+		margin-bottom: 50px;
+		background-color: @bgc_Color;
+		.chosen_top {
+			margin-bottom: 25px;
+			span {
+				font-weight: 700;
+			}
+			.van-icon {
+				margin-left: 5px;
+				border: 1px solid #000;
+				border-radius: 50%;
+			}
+		}
+		.chosen_bottom {
+			overflow: scroll;
+			.chosen_bottom_list {
+				display: flex;
+				width: 100%;
+				height: 250px;
+				//background-color: pink;
+				padding-left: 10px;
+				.chosen_bottom_item {
+					flex-shrink: 0;
+					margin-right: 15px;
+					width: 255px;
+					height: 100%;
+					text-align: left;
+					img {
+						width: 100%;
+						height: 160px;
+					}
+					h4 {
+						font-size: 16px;
+					}
+					p {
+						color: @font_Color;
+						font-size: 12px;
+						overflow: hidden; /*超出的部分隐藏起来。*/
+						white-space: nowrap; /*不显示的地方用省略号...代替*/
+						text-overflow: ellipsis; /* 支持 IE */
+					}
+				}
+			}
+		}
+	}
+
+	//好物部分
+	.goods {
+		width: 100%;
+		min-height: 200px;
+		.goods_top {
+			height: 50px;
+			line-height: 50px;
+		}
+		.goods_bottom {
+			.goods_bottom_list {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				flex-wrap: wrap;
+				.goods_bottom_item {
+					width: 49%;
+					img {
+						width: 130px;
+						height: 130px;
+					}
+					.goods_bottom_text {
+						text-align: center;
+					}
+				}
+				.goods_bottom_btn {
+					margin-right: 70px;
+				}
+			}
+		}
+	}
+}

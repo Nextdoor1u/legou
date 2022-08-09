@@ -1,0 +1,90 @@
+.search {
+  height: 100%;
+}
+.search .searchCue {
+  height: 100%;
+}
+.search .searchCue .searchCue_list {
+  padding: 10px;
+  background-color: #fff;
+  height: 100%;
+}
+.search .searchCue .searchCue_list .searchCue_item {
+  text-align: left;
+  padding: 5px;
+}
+.search .showGoods {
+  background-color: #fff;
+}
+.search .showGoods .showGoods_top {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+.search .showGoods .showGoods_top .showGoods_pic {
+  display: flex;
+  align-items: center;
+}
+.search .showGoods .showGoods_top .showGoods_pic .arrow {
+  display: flex;
+  flex-direction: column;
+}
+.search .showGoods .showGoods_top .showGoods_pic .arrow .current {
+  color: #c12c1f;
+}
+.search .showGoods .showGoods_top .active {
+  color: #c12c1f;
+}
+.search .showGoods .showGoods_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  border-right: 1px solid #666;
+}
+.search .showGoods .showGoods_bottom img {
+  width: 60%;
+}
+.search .history {
+  background-color: #fff;
+  padding: 10px;
+}
+.search .history .history_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search .history .history_bootm .history_bootm_list {
+  display: flex;
+}
+.search .history .history_bootm .history_bootm_list .history_bootm_item {
+  border: 1px solid #666;
+  padding: 5px;
+  margin-right: 10px;
+}
+.search .hot_search {
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #fff;
+}
+.search .hot_search .hot_search_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: first baseline;
+}
+.search .hot_search .hot_search_list h4 {
+  font-weight: normal;
+  text-align: left;
+}
+.search .hot_search .hot_search_list .hot_search_item {
+  padding: 5px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+}
+.search .hot_search .hot_search_list .hot_search_item.active {
+  color: #c12c1f;
+  border: 1px solid #c12c1f;
+}

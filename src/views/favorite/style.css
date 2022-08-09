@@ -1,0 +1,24 @@
+.favorite .favorite_title {
+  padding: 15px 0px;
+  background-color: #fff;
+  margin-block-end: 5px;
+  margin-block-start: 5px;
+}
+.favorite .favorite_container {
+  width: 100%;
+}
+.favorite .favorite_container .favorite_container_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.favorite .favorite_container .favorite_container_list .favorite_container_item {
+  background-color: #fff;
+  width: 48%;
+}
+.favorite .favorite_container .favorite_container_list .favorite_container_item img {
+  width: 90%;
+}
+.favorite .favorite_container .favorite_container_list .favorite_container_item p:last-child {
+  color: #c12c1f;
+}
